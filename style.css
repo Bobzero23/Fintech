@@ -18,6 +18,7 @@ a {
     font-weight: 400;
     /* 1.6 x 10 = 16px because of the font-size: 62.5px in the universal selector*/
     font-size: 1.6rem;
+    color: whitesmoke;
 }
 
 h1,
@@ -70,4 +71,134 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: #4CAF50;
+    margin: 0;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    transition: .3s ease-in-out;
+}
+
+nav box-icon {
+    display: none;
+}
+
+
+.header-content {
+    position: relative;
+    width: 50%;
+    top: 16%;
+    left: 8%;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* this will only work if the screen is lesser than the given value */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav box-icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+
+    nav ul {
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a {
+        color: #222;
+    }
 }
